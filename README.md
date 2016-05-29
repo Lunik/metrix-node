@@ -1,4 +1,6 @@
 # metrix-node
+![build-badge](https://travis-ci.org/Lunik/metrix-node.svg)
+
 Get metrics on your servers with a web interface.
 You need to install [metrix-master](https://github.com/Lunik/metrix-master) on your master server.
 
