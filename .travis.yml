@@ -20,4 +20,5 @@ before_install:
 
 script:
 - standard
-- npm start
+- npm start &
+- sleep 60
