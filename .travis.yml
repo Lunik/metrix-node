@@ -8,10 +8,16 @@ node_js:
 
 before_install:
 - npm install forever -g
+- npm install standard -g
 
 - git clone https://github.com/Lunik/metrix-master.git
 - cd metrix-master
+- npm install
 - forever -a start lib/index.js
+- cd ..
+
+- npm install
 
 script:
+- standard
 - npm start
