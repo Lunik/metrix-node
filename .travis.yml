@@ -5,19 +5,23 @@ node_js:
 - '6'
 - '5'
 - '4'
-
 before_install:
 - npm install standard -g
-
 - git clone https://github.com/Lunik/metrix-master.git
 - cd metrix-master
 - npm install
 - npm start &
 - cd ..
-
 - npm install
-
 script:
 - standard
 - npm start &
 - sleep 60
+
+deploy:
+  provider: npm
+  email: guillaume.lunik@gmail.com
+  on:
+    tags: true
+  api_key:
+    secure: vk3L0Vc+XvS1La1H0Bv9z+dofa6LOOcU1R4ZFhaJctKx2xkKvYdtWkF8TMVEhnYTbxPRrs/2EMz8UIxkga+qP8qotAZlwg5Z/3jLwCjZs4B0qv11G1r15rcaFt3uM0zJ76KKA7miAmYbWtn4sOvY9dkfv07/LxI29WnW2WgPwvdkY47T9tHaBG/a5Tq9SdDa3k2rppm+DItlGhGn05xmL8q+Hs/dnuMMTeQ+wi4IhZHYrZ14w42iNOxTK8/vdrABrQga+diEJxQgNm1LrS4Fj2KbXSAPpjLg0aYnM/bxfPSlAt5B8PSpV8g5bqQDbOOCCKt9pP8Uq710m8rrXgppigqcy1Wax4b4Y+g7dp+D7YNsyf7mTIHm1vfQ/u6ltDwhv6bUV3qrwVomA7VCAes3hJVfPKAuXbj9YJqQMHIsfP2UkiK9UzDAwkyUFsSNcCDqHYd85/9AWET0fpbud0LchHIw5FJZiKQgVWy8hEYi+jw6sk1499XcjJDUf3HkOr9vAiuSnmD6KiF7ZCoUgz6MHeYR8qleBspHaoN2Sch90Tc+z7ywnlvWfP5rvPouUoKF0vYCxxam1TJPycKQ5wfK5VvhF1Lon2e2JdQDggBv+nc/fhid+2z3yCoycAr+35qoLaF0YUkgviMcPvuZ3adbw2ChanA4yfQ7w7zFtIxIFZc=
