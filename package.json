@@ -21,5 +21,10 @@
   "dependencies": {
     "socket.io-client": "^1.4.6",
     "speedtest-net": "^1.2.5"
+  },
+  "standard": {
+    "ignore": [
+      "metrix-master/"
+    ]
   }
 }
