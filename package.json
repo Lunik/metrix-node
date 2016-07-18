@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Lunik/metrix-node#readme",
   "dependencies": {
     "socket.io-client": "^1.4.6",
-    "speedtest-net": "^1.2.5"
+    "speedtest-net": "^1.2.7"
   },
   "standard": {
     "ignore": [
